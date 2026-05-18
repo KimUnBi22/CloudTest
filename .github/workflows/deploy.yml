@@ -114,7 +114,7 @@ jobs:
             git reset --hard origin/master
             
             # 추가
-            cd \"\$APP_DIR/client\"
+            cd \"\$APP_DIR/client\"    
             npm ci         
             npm run build
 
