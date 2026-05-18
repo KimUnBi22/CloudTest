@@ -112,6 +112,12 @@ jobs:
             cd \"\$APP_DIR\"
             git fetch --all
             git reset --hard origin/master
+            
+            # 추가
+            cd \"\$APP_DIR/client\"
+            npm ci         
+            npm run build
+
 
             # (4) 백엔드 의존성 설치 + PM2 재기동
             cd \"\$APP_DIR/server\"
