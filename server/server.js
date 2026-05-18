@@ -16,7 +16,7 @@ app.use(express.urlencoded({extended : true}))
 // npm run build 를 통해 React 프로젝트를
 // 하나의 index.html 로 만들었음
 //  => 그 파일을 키기 위해 정적인 파일을 담당하는 코드 
-//주석처리 app.use(express.static(path.join('../client/dist')))
+app.use(express.static(path.join('../client/dist')))
 
 app.use('/', indexRouter)
 
